@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CONTACT - Mary Blalock - Career Coaching</title>
+    <link rel="stylesheet" href="/styles/contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b4091a65fc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body id="body">
+    <header id="header">
+      <button onclick="openNav()" class="menubtn" id="menu">
+        <div class="container" onclick="myFunction2(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </button>
+      <a
+        href="javascript:void(0)"
+        class="closebtn"
+        id="closeMenu"
+        onclick="closeNav()"
+        ><i class="fa-solid fa-xmark"></i
+      ></a>
+      <div id="mySidenav" class="sidenav">
+        <a href="#" class="home">HOME</a>
+        <a href="#" class="career-coaching">1:1 CAREER COACHING</a>
+        <a href="#" class="quiz">CAREER QUIZ</a>
+        <a href="#" class="about">ABOUT <span>»</span></a>
+        <a href="#" class="contact">CONTACT</a>
+        <a href="#" class="login">LOG IN</a>
+      </div>
+
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("menu").style.display = "none";
+          document.getElementById("closeMenu").style.display = "block";
+          document.getElementById("body").style.background = "#f2f2f2";
+          document.getElementById("header").style.background = "#f2f2f2";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("mySidenav").style.transition = "0.3s";
+          document.getElementById("menu").style.display = "block";
+          document.getElementById("closeMenu").style.display = "none";
+          document.getElementById("body").style.background = "#fff";
+          document.getElementById("header").style.background = "#fff";
+        }
+      </script>
+
+      <!--navbar at large screens-->
+
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">1:1 CAREER COACHING</a></li>
+        <li><a href="#">CAREER QUIZ</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+
+      <button class="loginBtn">LOG IN</button>
+    </header>
+
+    <div class="underline"></div>
+    <div class="image-container">
+      <img src="images/MaryWebFormBanner.jpg" />
+    </div>
+  </body>
+</html>
