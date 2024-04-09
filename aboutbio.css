@@ -1,0 +1,375 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+header {
+  height: 48px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+}
+header ul,
+.loginBtn {
+  display: none;
+}
+header .menubtn {
+  color: white;
+  background-color: transparent;
+  height: auto;
+  margin: 16px;
+  border: none;
+  float: right;
+  cursor: pointer;
+}
+header .dropbtn .fa-bars {
+  font-size: 1.6em;
+}
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 25px;
+  height: 2px;
+  background-color: #616161;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  display: none;
+}
+
+.change .bar2 {
+  display: none;
+}
+
+.change .bar3 {
+  display: none;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.2s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 0.9em;
+  background: #000;
+  margin: 30px;
+  margin-left: 30px;
+  margin-top: -20px;
+  letter-spacing: -0.8px;
+  width: 100px;
+  color: #f1f1f1;
+  font-weight: 500;
+  padding: 12px;
+  display: block;
+  transition: none;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.sidenav .home {
+  width: 50px;
+  text-align: center;
+}
+
+.sidenav .career-coaching {
+  width: 140px;
+  text-align: center;
+}
+
+.sidenav .quiz {
+  width: 90px;
+  text-align: center;
+}
+
+.sidenav .about {
+  width: 60px;
+  text-align: center;
+}
+
+.sidenav .contact {
+  width: 60px;
+  text-align: center;
+}
+
+.sidenav .login {
+  width: 50px;
+  text-align: center;
+}
+
+.sidenav span {
+  font-size: 1.2em;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+header .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-weight: 100;
+  font-size: 1.7em;
+  margin: 16px;
+  margin-right: -7px;
+  color: #818181;
+  display: none;
+  text-decoration: none;
+}
+
+.underline {
+  margin: auto;
+  margin-top: 70px;
+  width: 85%;
+  height: 1px;
+  background-color: rgb(226, 226, 226);
+}
+
+.section1 {
+  margin: 40px;
+  text-align: center;
+  font-size: 1.3em;
+  color: #f4c34d;
+}
+
+.section1 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+}
+
+.section1 h2 {
+  font-size: 1.5em;
+  color: #f4c34d;
+  margin: 10px auto;
+}
+.section2 {
+  margin: auto 25px;
+}
+
+.section2 h4 {
+  padding: 30px 0px;
+  line-height: 23px;
+}
+.section2 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  margin-bottom: 28px;
+}
+
+.section2 p {
+  line-height: 24px;
+  font-size: 1em;
+}
+footer {
+  margin-top: 85px;
+}
+footer .title {
+  text-align: center;
+  color: #f4c34d;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.4em;
+}
+
+footer .title h3 {
+  font-weight: 400;
+  letter-spacing: -1.1px;
+}
+footer .links ul {
+  text-align: center;
+  margin: 40px auto;
+  font-weight: 700;
+  font-size: 0.95em;
+  color: #383838;
+}
+
+footer .links ul li {
+  display: inline;
+  padding: 10px;
+  letter-spacing: 1px;
+}
+
+@media screen and (min-width: 641px) {
+  button {
+    display: none;
+  }
+  header {
+    height: 80px;
+    position: absolute;
+    width: 100%;
+  }
+  header ul {
+    display: flex;
+    margin: 13px;
+    float: right;
+    margin-top: 30px;
+    margin-right: 100px;
+  }
+  header ul li {
+    margin: 5px;
+    list-style: none;
+    text-align: right;
+  }
+
+  header ul li a {
+    text-decoration: none;
+    color: #383838;
+    font-weight: 600;
+    font-size: 0.93em;
+  }
+  header .loginBtn {
+    display: block;
+    float: right;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 20px;
+    right: 10px;
+    padding: 15px;
+    background-color: #f4c34d;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 1em;
+    color: #fff;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+
+  .section1 {
+    margin: 40px;
+    text-align: center;
+    font-size: 1.3em;
+    color: #f4c34d;
+  }
+
+  .section1 .pic1 {
+    display: block;
+    margin-left: 10px;
+    margin-top: 100px;
+    width: 140px;
+  }
+  .section1 .pic2 {
+    display: block;
+    margin-left: 10px;
+    margin-top: -76px;
+    width: 140px;
+    position: relative;
+    float: right;
+  }
+
+  .section1 h2 {
+    font-size: 2.3em;
+    color: #f4c34d;
+    margin-top: -75px;
+    position: relative;
+  }
+
+  .section2 img {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40%;
+    margin-bottom: 28px;
+    height: auto;
+  }
+  .image {
+    height: auto;
+    width: 100%;
+    position: relative;
+  }
+  .section2 .paragraph-1 {
+    max-width: 60%;
+    height: 200px;
+    position: relative;
+    float: right;
+    margin-top: 0px;
+    margin-right: -10px;
+  }
+}
+
+@media screen and (min-width: 784px) {
+  .section2 .paragraph-1 {
+    margin-top: 30px;
+    text-align: justify;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section2 .paragraph-1 {
+    margin-top: 50px;
+    max-width: 50%;
+    margin-right: 50px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .section2 .paragraph-1 {
+    max-width: 700px;
+    margin-top: 100px;
+    margin-right: 80px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section1 h2 {
+    font-size: 3.3em;
+  }
+  .section2 .paragraph-1 {
+    max-width: 55%;
+    height: 200px;
+    position: relative;
+    float: right;
+    margin-top: 0px;
+    margin-right: 20px;
+  }
+  .section2 .paragraph-2 {
+    max-width: 55%;
+    height: 200px;
+    position: relative;
+    float: right;
+    margin-top: -320px;
+    text-align: justify;
+    margin-right: 20px;
+  }
+  .section2 .paragraph-2 p {
+    margin-top: -20px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  header {
+    width: 95%;
+  }
+  .section2 .paragraph-2 {
+    margin-top: -370px;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .section2 .paragraph-2 {
+    margin-top: -450px;
+  }
+}
