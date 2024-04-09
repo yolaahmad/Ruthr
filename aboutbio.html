@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABOUT - Mary Blalock - Career Coaching</title>
+    <link rel="stylesheet" href="aboutbio.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b4091a65fc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="body">
+    <header>
+      <button onclick="openNav()" class="menubtn" id="menu">
+        <div class="container" onclick="myFunction2(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </button>
+      <a
+        href="javascript:void(0)"
+        class="closebtn"
+        id="closeMenu"
+        onclick="closeNav()"
+        ><i class="fa-solid fa-xmark"></i
+      ></a>
+      <div id="mySidenav" class="sidenav">
+        <a href="#" class="home">HOME</a>
+        <a href="#" class="career-coaching">1:1 CAREER COACHING</a>
+        <a href="#" class="quiz">CAREER QUIZ</a>
+        <a href="#" class="about">ABOUT <span>»</span></a>
+        <a href="#" class="contact">CONTACT</a>
+        <a href="#" class="login">LOG IN</a>
+      </div>
+
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("menu").style.display = "none";
+          document.getElementById("closeMenu").style.display = "block";
+          document.getElementById("body").style.background = "#f2f2f2";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("mySidenav").style.transition = "0.3s";
+          document.getElementById("menu").style.display = "block";
+          document.getElementById("closeMenu").style.display = "none";
+          document.getElementById("body").style.background = "#fff";
+        }
+      </script>
+
+      <!--navbar at large screens-->
+
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">1:1 CAREER COACHING</a></li>
+        <li><a href="#">CAREER QUIZ</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+
+      <button class="loginBtn">LOG IN</button>
+    </header>
+    <br />
+    <div class="underline"></div>
+    <div class="section1">
+      <img src="images/ellipses.png" class="pic1" /><br />
+      <h2>ABOUT ME</h2>
+      <br />
+      <img src="images/ellipses.png" class="pic2" />
+    </div>
+    <div class="underline"></div>
+
+    <div class="section2">
+      <h4>
+        "My job as a Career Coach is to help you find a career path that fits
+        your personality and helps you feel more fulfilled."
+      </h4>
+      <div class="image">
+        <img src="images/Mary+Model.png" />
+        <p class="paragraph-1">
+          Working as a recruiter, coach, and on crisis hotline volunteer has
+          given me a unique perspective into how to help people navigate life's
+          challenges - both large and small. I believe that it is possible to
+          have what you truly want in life - and believe that it is possible to
+          transform negative situations into positive outcomes.
+        </p>
+      </div>
+      <div class="paragraph-2">
+        <h4>
+          My name is Mary Blalock and I'm a Career Coach who has helped people
+          get jobs at companies like Amazon, Microsoft, adidas and Nike.
+        </h4>
+        <p>
+          I recieved my coaching certification from Vera University where I
+          studied evidence-based theories on how to help people create lasting
+          behaviour change in their lives. I discovered that some of my coaching
+          clients were asking for career advice because they were struggling
+          with difficult and stressful work situations and sacrificing their
+          health for thier jobs. I decided to combine my recruiting skills and
+          coaching experience to focus on helping people find work that brings
+          them joy and meaning in their life.
+        </p>
+        <h4>
+          My own career has had ups, downs, and "aha!" moments to find a job
+          that I love.
+        </h4>
+        <p>
+          I get excited to help people overcoe the real obstacles - both
+          internally and externally - that keep up from living a life of
+          contentment in our work.
+        </p>
+      </div>
+    </div>
+    <div class="underline"></div>
+
+    <footer>
+      <div class="title">
+        <h3>MARY BLALOCK - CAREER COACH</h3>
+      </div>
+      <div class="links">
+        <ul>
+          <li><a href="#"></a>HOME</li>
+          <li><a href="#"></a>1:1 CAREER COACHING</li>
+          <li><a href="#"></a>ABOUT</li>
+          <li><a href="#"></a>CONTACT</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
